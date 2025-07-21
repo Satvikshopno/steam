@@ -482,6 +482,7 @@ body{
 }
 .menu-has-child a i {
 	margin-left: 10px;
+	font-size: 30px;
 }
 .phone_outer_div{
     background-color: white;
@@ -959,7 +960,10 @@ footer h4{
 }
 
 
-
+.image_section{
+	width: 1200px;
+	margin: 0 auto;
+}
  /* ------------------------------------------------------------------ MEDIA QUERY ----------------------------------------------------------------- */
 
 

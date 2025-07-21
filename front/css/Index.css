@@ -461,7 +461,7 @@ dl, ol, ul {
 }
 .header-main-menu-2 ul li {
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 20px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1278,7 +1278,7 @@ footer h4{
 
 .about-bg-01 {
 	background-image: url(/img/vector1.png);
-	background-size: cover;
+	background-size: auto;
 	background-repeat: no-repeat;
 	margin-top: 50px;
 }
@@ -1428,17 +1428,19 @@ footer h4{
 	justify-content: center;
 	border-radius: 3px;
 }
+.Sepl_about{
+justify-content: center !important ;
+align-items: center;
+    margin: 0 auto;
+	 margin-left: 15px !important;
+}
 
 @media (max-width: 767px) {
 .theme-btn {
 	padding: 0 25px;
 }
 }
-.Sepl_about{
-justify-content: center !important ;
-align-items: center;
-    margin: 0 auto;
-}
+
 @media (max-width: 1500px) {
 .Sepl_about{
 justify-content: end !important ;
