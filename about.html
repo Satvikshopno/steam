@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./front/css/about.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Matangi:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+ 
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container px-3 px-sm-5">
+            <div class="d-flex align-items-center">
+                <svg class="blue_text nav_logo" viewBox="0 0 40 40" fill="currentColor">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M12 20h16M20 12v16" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                </svg>
+                <span class="blue_text logo_title ms-2">Steam Equipments</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto me-auto my-2 my-lg-0">
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link active" aria-current="page" href="#">Solutions</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" href="#">Industries</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item px-xl-2">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <div>
+                <img src="./img/phone_icon.png" class="phone_icon" alt="">
+                <span class="phone_number blue_text">+91 98765 43210</span>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-5 py-3">
+        <div class="container about_section mt-5 pt-3">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 m-auto pe-4 ps-lg-0">
+                    <h2 class="blue_text title_text m-0 px-0 pb-3">ABOUT SEPL</h2>
+                    <p class="text_secondary m-0 p-0">SEPL is a leading manufacturer of Steam & Water Analysis Systems (SWAS), Continuous Emissions Monitoring Systems (CEMS), Ambient Air Monitoring Systems (AQMS), Water & Waste Water Monitoring, Flow Metering, Vibration Monitoring Systems (VMS), Moisture & Dew Point monitoring systems. We provide complete systems including software / SCADA / PLC requirements for your requirements which even include Shelter / Container based systems for Safe or Hazardous area.</p>
+                    <p class="text_secondary m-0 px-0 pt-3">With manufacturing and/or testing facilities in Pune, Bangalore, South Africa, UAE, USA and Singapore, we can cater to your requirements of integrated process monitoring systems as per your needs. With exports to more than 40 countries, we are poised for a bigger growth with the help of our esteemed customers.</p>
+                    <p class="text_secondary m-0 px-0 pt-3">Our team of young professionals having varied domain expertise such as Environment Monitoring, Process Gas Analysis, Power Plant Instrumentation, Flow Metering, Dew Point and Moisture Analysis, SWAS, CEMS, AQMS, Vibration Monitoring and Waste to Power generation will come handy for you in improving your processes, increasing throughput and reducing waste; all this with an environment concern.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 pe-lg-0 m-auto text-center">
+                    <img src="{{ env('APP_URL').'img/orj_about-removebg-preview.png ' }}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-0 p-0">
+        <div class="container">
+            <h2 class="blue_text text-center title_text m-0 px-0 pt-0 pb-5">OUR TEAMS</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <img src="./img/m1.png" class="img-fluid member_img" alt="">
+                    <div class="text-center mt-3 member_caption">
+                        <h4 class="m-0 p-0">John Smith</h4>
+                        <h6 class="m-0 px-0 pt-2"> ~ Chief Executive Officer</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-sm-0 text-center">
+                    <img src="./img/m2.jpg" class="img-fluid member_img" alt="">
+                    <div class="text-center mt-3 member_caption">
+                        <h4 class="m-0 p-0">Robert Allen</h4>
+                        <h6 class="m-0 px-0 pt-2"> ~ Chief Operations Officer</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-lg-0 text-center">
+                    <img src="./img/m3.jpg" class="img-fluid member_img" alt="">
+                    <div class="text-center mt-3 member_caption">
+                        <h4 class="m-0 p-0">Michael Davis</h4>
+                        <h6 class="m-0 px-0 pt-2"> ~ Chief Financial Officer</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-5 mt-lg-0 text-center">
+                    <img src="./img/m4.png" class="img-fluid member_img" alt="">
+                    <div class="text-center mt-3 member_caption">
+                        <h4 class="m-0 p-0">James Clark</h4>
+                        <h6 class="m-0 px-0 pt-2"> ~ Chief Marketing Officer</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="py-5 mt-5">
+        <div class="container px-3 px-sm-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center">
+                        <svg class="footer_logo" viewBox="0 0 40 40" fill="currentColor">
+                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M12 20h16M20 12v16" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="white_text logo_title ms-2">Steam Equipments</span>
+                    </div>
+                    <p class="m-0 px-0 py-4">Leading provider of precision analytical, sampling, and environmental solutions for industrial excellence.</p>
+                    <div class="d-flex align-items-center social_media mt-0 pt-0">
+                        <a href="#" class="m-0 p-0">
+                            <i class='bx bxl-facebook-circle m-0 p-0'></i>
+                        </a>
+                        <a href="#" class="px-3 m-0 py-0">
+                           <i class='bx bxl-twitter m-0 p-0' ></i>
+                        </a>
+                        <a href="#" class="m-0 p-0">
+                            <i class='bx bxl-linkedin-square m-0 p-0' ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h4 class="m-0 px-0 pt-0 pb-4 white_text">Quick Links</h4>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Solutions</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Products</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Industries</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Resources</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Contact</a>
+                    <a href="about_page.html" class="footer_link m-0 px-0 pt-0 pb-2">Abous Us</a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h4 class="m-0 px-0 pt-0 pb-4 white_text">Services</h4>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Analytical Equipment</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Sampling Systems</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Environmental Solutions</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Steam Engineering</a>
+                    <a href="#" class="footer_link m-0 px-0 pt-0 pb-2">Technical Support</a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h4 class="m-0 px-0 pt-0 pb-4 white_text">Contact Info</h4>
+                    <p>Industrial Area, Sector 15 <br> Gurgaon, Haryana 122001</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Email: info@steamequipments.com</p>
+                </div>
+            </div>
+            <hr class="my-4" style="border: 1px solid #2b59d9;">
+            <p class="text-primary-100 text-sm text-center"> © 2025 Steam Equipments Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
