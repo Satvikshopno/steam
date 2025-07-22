@@ -8720,10 +8720,10 @@ svg.web-design circle {
 	opacity: 0.5;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .55);
+    color: rgba(0, 0, 0, .55) !important;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-	color: rgb(255 255 255 / 90%);
+	color: rgb(255 255 255 / 90%) !important;
 	background-color: #1e3a8a;
 }
 .nav-link {
@@ -8743,8 +8743,8 @@ svg.web-design circle {
 	padding-bottom: 0;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-	background-color: #E03D3D;
-	color: #FFFFFF;
+    background-color: #1e3a8a;
+    color: #FFFFFF !important;
 }
 .navbar {
 	/* box-shadow: 0px 0px 10px 0px rgba(65,128,209,.18); */
