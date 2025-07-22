@@ -682,15 +682,122 @@ body{
 	margin-top: var(--margin-zero);
 }
 /* header end  */
+.navbar-custom {
+	background-color: #1e378d;
+	/* Deep blue */
+}
+
+.navbar-nav {
+	gap: 20px;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .dropdown-toggle {
+	color: white !important;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-menu a:hover {
+	color: #ffffff !important;
+}
+
+.dropdown-menu {
+	background-color: #1e378d;
+}
+
+.dropdown-menu .dropdown-item {
+	color: rgb(0, 0, 0);
+	    padding: 7px 20px;
+    font-weight: 300;
+}
+
+.phone-contact {
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 500;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  margin-top: 0;
+}
+
+/* Default state */
+.navbar .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Optional: style hover link text */
+.dropdown-menu a:hover {
+  background-color: #1e378d;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.phone-icon {
+	background: white;
+	color: #1e378d;
+	border-radius: 50%;
+	padding: 8px;
+}
+
+.navbar-brand img {
+	height: 75px;
+}
+.product_1 h6{
+	font-size: 18px;
+	color: #000;
+	    margin-left: 20px;
+}
+@media (max-width: 1024px) {
+	.navbar {
+		/* width: 1200px; */
+	}
+}
+.dropdown-menu {
+  overflow: hidden;
+  z-index: 999;
+}
+@media (min-width: 1440px) {
+	.navbar {
+		width: 100%;
+	}
+	@media (min-width: 1200px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+}
+
+}
 
 
 .navbar{
-    background-color: white !important;
+    background-color: #1e3a8a !important;
     box-shadow: 1px 1px 5px lightgray !important;
-    padding: 15px 0px !important;
+    padding: 10px 0px !important;
 }
 .navbar .nav-item .nav-link{
-    color: #6b7280 !important;
+    color: #ffffff !important;
     font-size: 16px !important;
 }
 .blue_text{

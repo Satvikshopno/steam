@@ -51,9 +51,6 @@ CSS INDEX
 ******************************************************* 
 *************************************************************** */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap");
-body {
-	 font-family: "Inter", sans-serif;
-}
 .img, img {
 	max-width: 100%;
 	-webkit-transition: all 0.3s linear 0s;
@@ -61,6 +58,14 @@ body {
 	-ms-transition: all 0.3s linear 0s;
 	-o-transition: all 0.3s linear 0s;
 	transition: all 0.3s linear 0s;
+}
+/* * {
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif !important;
+} */
+body {
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden !important;
 }
 a, .button, button {
 	-webkit-transition: all 0.3s linear 0s;
@@ -92,7 +97,7 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 	text-transform: capitalize;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Rubik", sans-serif;
+	/* font-family: "Rubik", sans-serif; */
 	color: var(--clr-body-heading);
 	margin-top: 0px;
 	line-height: 1.2;
@@ -127,7 +132,7 @@ ul {
 	list-style: none;
 }
 p {
-	font-family: "Open Sans", sans-serif;
+	/* font-family: "Open Sans", sans-serif; */
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 28px;
@@ -1348,11 +1353,11 @@ textarea:-ms-input-placeholder {
     box-shadow: 1px 1px 5px lightgray !important;
     padding: 10px 0px !important;
 }
-/* .navbar .nav-item .nav-link{
+.navbar .nav-item .nav-link{
     color: #ffffff !important;
     font-size: 18px !important;
-    font-weight: 600;
-} */
+    font-weight: 500;
+}
 .blue_text{
     color: #ffffff !important;
 }
@@ -1452,74 +1457,114 @@ footer h4{
 02. header
 ******************************************************* 
 *************************************************************** */
-.header-area {
-	position: relative;
-	z-index: 5;
-}
-.header-topbar {
-	background-color: #d8d8d8;
-	padding: 10px 0;
-}
-.header-topbar-info p {
-	margin-bottom: 0;
-	color: #1e3a8a;
-	font-size: 15px;
-}
-.header-topbar-info p i {
-	font-size: 15px;
-	margin-right: 10px;
-	color: #1e3a8a;
-}
-.header-topbar-social {
-	text-align: end;
-}
-.header-topbar-social a {
-	font-size: 15px;
-	color: #1e3a8a;
-	margin-left: 15px;
-}
-.header-middle {
-	position: relative;
-	z-index: 5;
-	height: 145px;
-	display: flex;
-	align-items: center;
-	background: #fff;
-}
-.header-middle .logo {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	display: flex;
-	background: #1e3a8a;
-	align-items: center;
-	padding-bottom: 30px;
-	max-width: 150px;
-}
-.header-middle .logo a {
-	display: inline-block;
-}
-.header-middle .logo::before {
-	background-color: var(--clr-theme-primary);
-	content: "";
-	height: 100%;
-	position: absolute;
-	right: 100%;
-	top: 0;
-	width: 1200px;
-}
-.header-middle .logo::after {
-	border-left: 0 solid var(--clr-theme-primary);
-	border-right: 100px solid transparent;
-	border-top: 145px solid var(--clr-theme-primary);
-	content: "";
-	height: 0;
-	position: absolute;
-	right: -100px;
-	top: 0;
-	width: 0;
+/* //header1111/// */
+.navbar-custom {
+	background-color: #1e378d;
+	/* Deep blue */
 }
 
+.navbar-nav {
+	gap: 20px;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .dropdown-toggle {
+	color: white !important;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-menu a:hover {
+	color: #ffffff !important;
+}
+
+.dropdown-menu {
+	background-color: #1e378d;
+}
+
+.dropdown-menu .dropdown-item {
+	color: rgb(0, 0, 0);
+	    padding: 7px 20px;
+    font-weight: 300;
+}
+
+.phone-contact {
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 500;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  margin-top: 0;
+  background: #FFFF;
+}
+
+/* Default state */
+.navbar .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Optional: style hover link text */
+.dropdown-menu a:hover {
+  background-color: #1e378d;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.phone-icon {
+	background: white;
+	color: #1e378d;
+	border-radius: 50%;
+	padding: 8px;
+}
+
+.navbar-brand img {
+	height: 75px;
+}
+.product_1 h6{
+	font-size: 18px;
+	color: #000;
+	    margin-left: 20px;
+}
+@media (max-width: 1024px) {
+	.navbar {
+		/* width: 1200px; */
+	}
+	.navbar-nav {
+    gap: 0px;
+}
+}
+
+@media (min-width: 1440px) {
+	.navbar {
+		width: 100%;
+	}
+	@media (min-width: 1200px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+}
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
 .header-middle {
 	height: 90px;
@@ -2001,7 +2046,7 @@ footer h4{
 .header-menu-call-2 .header-menu-call-number {
 	display: inline-block;
 	color: #fff;
-	font-family: "Rubik", sans-serif;
+	/* font-family: "Rubik", sans-serif; */
 	font-weight: 500;
 	font-size: 18px;
 }
@@ -6524,7 +6569,7 @@ svg.web-design circle {
 	color: var(--clr-body-heading);
 	font-size: 20px;
 	font-weight: 400;
-	font-family: "Rubik", sans-serif;
+	/* font-family: "Rubik", sans-serif; */
 }
 .shop-content-rating a {
 	display: inline-block;
@@ -8706,8 +8751,8 @@ svg.web-design circle {
 	max-width: 1700px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	/* margin-top: 40px;
+	margin-bottom: 40px; */
 	z-index: 1;
 }
 .navbar-nav .nav-link {
@@ -8717,10 +8762,10 @@ svg.web-design circle {
 
 @media (max-width: 767.98px) {
 .navbar {
-	margin-left: 15px;
+	/* margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 40px;
-	margin-top: 40px;
+	margin-top: 40px; */
 }
 .card{
 	padding: 10px;
@@ -8741,8 +8786,8 @@ svg.web-design circle {
 
 @media (min-width: 992px) {
 .navbar-expand-lg .navbar-nav .nav-link {
-	padding-right: 1.5rem;
-	padding-left: 1.5rem;
+	/* padding-right: 1.5rem; */
+	/* padding-left: 1.5rem; */
 }
 }
 .breadcrumb {

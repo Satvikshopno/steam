@@ -11,74 +11,116 @@ body{
     max-width: 90% !important;
 }
 
+.navbar-custom {
+	background-color: #1e378d;
+	/* Deep blue */
+}
+
+.navbar-nav {
+	gap: 20px;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .dropdown-toggle {
+	color: white !important;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-menu a:hover {
+	color: #ffffff !important;
+}
+
+.dropdown-menu {
+	background-color: #1e378d;
+}
+
+.dropdown-menu .dropdown-item {
+	color: rgb(0, 0, 0);
+	    padding: 7px 20px;
+    font-weight: 300;
+}
+
+.phone-contact {
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 500;
+}
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  margin-top: 0;
+}
+
+/* Default state */
+.navbar .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Optional: style hover link text */
+.dropdown-menu a:hover {
+  background-color: #1e378d;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.phone-icon {
+	background: white;
+	color: #1e378d;
+	border-radius: 50%;
+	padding: 8px;
+}
+
+.navbar-brand img {
+	height: 75px;
+}
+.product_1 h6{
+	font-size: 18px;
+	color: #000;
+	    margin-left: 20px;
+}
+@media (max-width: 1024px) {
+	.navbar {
+		/* width: 1200px; */
+	}
+}
+.dropdown-menu {
+  overflow: hidden;
+  z-index: 999;
+}
+@media (min-width: 1440px) {
+	.navbar {
+		width: 100%;
+	}
+	@media (min-width: 1200px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    margin-top: 0;
+  }
+
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+}
+
+}
+
 /* //header// */
-.header-area {
-	position: relative;
-	z-index: 5;
-}
-.header-topbar {
-	background-color: #d8d8d8;
-	padding: 10px 0;
-}
-.header-topbar-info p {
-	margin-bottom: 0;
-	color: #1e3a8a;
-	font-size: 15px;
-}
-.header-topbar-info p i {
-	font-size: 15px;
-	margin-right: 10px;
-	color: #1e3a8a;
-}
-.header-topbar-social {
-	text-align: end;
-}
-.header-topbar-social a {
-	font-size: 15px;
-	color: #1e3a8a;
-	margin-left: 15px;
-}
-.header-middle {
-	position: relative;
-	z-index: 5;
-	height: 145px;
-	display: flex;
-	align-items: center;
-	background: #fff;
-}
-.header-middle .logo {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	display: flex;
-	background: #1e3a8a;
-	align-items: center;
-	padding-bottom: 30px;
-	max-width: 150px;
-}
-.header-middle .logo a {
-	display: inline-block;
-}
-.header-middle .logo::before {
-	background-color: var(--clr-theme-primary);
-	content: "";
-	height: 100%;
-	position: absolute;
-	right: 100%;
-	top: 0;
-	width: 1200px;
-}
-.header-middle .logo::after {
-	border-left: 0 solid var(--clr-theme-primary);
-	border-right: 100px solid transparent;
-	border-top: 145px solid var(--clr-theme-primary);
-	content: "";
-	height: 0;
-	position: absolute;
-	right: -100px;
-	top: 0;
-	width: 0;
-}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
 .header-middle {
@@ -685,12 +727,12 @@ body{
 
 
 .navbar{
-    background-color: white !important;
+    background-color: #1e3a8a !important;
     box-shadow: 1px 1px 5px lightgray !important;
     padding: 15px 0px !important;
 }
 .navbar .nav-item .nav-link{
-    color: #6b7280 !important;
+    color: #ffffff !important;
     font-size: 16px !important;
 }
 .blue_text{
