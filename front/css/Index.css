@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Poppins" !important;
   overflow-x: hidden !important;
 }
 dl, ol, ul {
@@ -26,6 +26,12 @@ dl, ol, ul {
 	background-color: #1e378d;
 	/* Deep blue */
 }
+hr {
+	border-bottom: 1px solid #ffffff !important;
+	border-top: 0 none;
+	padding: 0;
+	opacity: 1;
+}
 
 .navbar-nav {
 	gap: 20px;
@@ -39,7 +45,7 @@ dl, ol, ul {
 
 .navbar-custom .nav-link:hover,
 .navbar-custom .dropdown-menu a:hover {
-	color: #ffffff !important;
+	color: #000000 !important;
 }
 
 .dropdown-menu {
@@ -78,13 +84,14 @@ dl, ol, ul {
 
 /* Optional: style hover link text */
 .dropdown-menu a:hover {
-  background-color: #1e378d;
+  background-color: #1e3a8a36;
   color: #fff;
   transition: all 0.3s ease;
+  border-radius: 5px;
 }
 .phone-icon {
-	background: white;
-	color: #1e378d;
+	background: #1e378d;
+	color: #FFFF;
 	border-radius: 50%;
 	padding: 8px;
 }
@@ -720,12 +727,12 @@ dl, ol, ul {
 }
 /* header end  */
 .navbar{
-    background-color: #1e3a8a !important;
+    background-color: #ffffff !important;
     box-shadow: 1px 1px 5px lightgray !important;
     padding: 10px 0px !important;
 }
 .navbar .nav-item .nav-link{
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 18px !important;
     font-weight: 500;
 }
@@ -771,6 +778,8 @@ dl, ol, ul {
 }
 footer{
     background-color: #1e3a8a !important;
+	padding-top: 40px;
+	padding-bottom: 15px;
 }
 .social_media i{
     color: #dbeafe !important;
@@ -780,9 +789,10 @@ footer{
     color: white !important;
 }
 footer p {
-    color: #dbeafe !important;
-    font-size: 14px !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
 }
+
 footer h4{
     font-size: 20px !important;
 }
@@ -1079,7 +1089,7 @@ footer h4{
     position: absolute !important;
     top: -80px !important;
     left: auto !important;
-    right: -45px !important;
+    right: 35px !important;
     /* z-index: 9999 !important; */
     /* position: fixed !important;
     top: 20% !important;
@@ -1658,7 +1668,7 @@ background-image: none;
 .card-text {
 	font-size: 15px;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 	color: #FFFFFF;
 }
 .theme-btn-white {
@@ -1693,7 +1703,20 @@ background-image: none;
 	color: #113e77;
 }
 
-
+.float {
+    position: fixed;
+    width: 58px;
+    height: 56px;
+    bottom: 120px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 37px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
 
 
 

@@ -64,7 +64,7 @@ CSS INDEX
 	font-family: "Inter", sans-serif !important;
 } */
 body {
-  font-family: "Inter", sans-serif ;
+  font-family: "Poppins";
   overflow-x: hidden !important;
 }
 a, .button, button {
@@ -139,7 +139,7 @@ p {
 	color: #838383;
 }
 hr {
-	border-bottom: 2px solid #113e77;
+	border-bottom: 1px solid #ffffff;
 	border-top: 0 none;
 	padding: 0;
 	opacity: 1;
@@ -1354,7 +1354,7 @@ textarea:-ms-input-placeholder {
     padding: 10px 0px !important;
 }
 .navbar .nav-item .nav-link{
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 18px !important;
     font-weight: 500;
 }
@@ -1400,6 +1400,8 @@ textarea:-ms-input-placeholder {
 }
 footer{
     background-color: #1e3a8a !important;
+		padding-top: 40px;
+	padding-bottom: 15px;	
 }
 .social_media i{
     color: #dbeafe !important;
@@ -1410,7 +1412,7 @@ footer{
 }
 footer p {
     color: #dbeafe !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
 }
 footer h4{
     font-size: 20px !important;
@@ -1459,7 +1461,7 @@ footer h4{
 *************************************************************** */
 /* //header1111/// */
 .navbar-custom {
-	background-color: #1e378d;
+	background-color: #ffffff;
 	/* Deep blue */
 }
 
@@ -1475,7 +1477,8 @@ footer h4{
 
 .navbar-custom .nav-link:hover,
 .navbar-custom .dropdown-menu a:hover {
-	color: #ffffff !important;
+	color: #ffffff ;
+	border-radius: 5px;
 }
 
 .dropdown-menu {
@@ -1483,7 +1486,7 @@ footer h4{
 }
 
 .dropdown-menu .dropdown-item {
-	color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0) !important;
 	    padding: 7px 20px;
     font-weight: 300;
 }
@@ -1515,17 +1518,20 @@ footer h4{
 
 /* Optional: style hover link text */
 .dropdown-menu a:hover {
-  background-color: #1e378d;
+  background-color: #1e3a8a36;
   color: #fff;
   transition: all 0.3s ease;
 }
 .phone-icon {
-	background: white;
-	color: #1e378d;
+    background: #1e3a8a;
+    color: #ffffff;
 	border-radius: 50%;
 	padding: 8px;
 }
-
+.phone-num{
+	font-size: 18px;
+	color: #000;
+}
 .navbar-brand img {
 	height: 75px;
 }
@@ -2928,6 +2934,7 @@ footer h4{
 	background-repeat: no-repeat;
 	position: relative;
 	background-image: url("/img/About-us/breadcrumb.jpg");
+	z-index: -1;
 }
 .bn-breadcrumb::before {
 	position: absolute;
@@ -8560,7 +8567,7 @@ svg.web-design circle {
 	min-width: 0;
 	word-wrap: break-word;
 	background-color: #113e77;
-	border-radius: 0px!important;
+	border-radius: 10px!important;
 	padding: 10% 15% 10% 15%;
 }
 .card-title {
@@ -8571,7 +8578,7 @@ svg.web-design circle {
 .card-text {
 	font-size: 15px;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	color: #FFFFFF;
 }
 .theme-btn-white {
@@ -8634,7 +8641,7 @@ svg.web-design circle {
 	border: 1px solid #113e77;
 }
 .theme-btn-border:hover {
-	background-color: #113e77;
+	background-color: #ffffff69;
 	color: #fff;
 }
 .footer-bottom {
@@ -8725,6 +8732,7 @@ svg.web-design circle {
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
 	color: rgb(255 255 255 / 90%) !important;
 	background-color: #1e3a8a;
+	border-radius: 5px;
 }
 .nav-link {
 	display: block;
@@ -8745,6 +8753,7 @@ svg.web-design circle {
 .navbar-light .navbar-nav .nav-link:hover {
     background-color: #1e3a8a;
     color: #FFFFFF !important;
+	border-radius: 5px;
 }
 .navbar {
 	/* box-shadow: 0px 0px 10px 0px rgba(65,128,209,.18); */
@@ -9038,3 +9047,17 @@ svg.web-design circle {
 
 
 
+.float {
+    position: fixed;
+    width: 58px;
+    height: 56px;
+    bottom: 120px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 37px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}

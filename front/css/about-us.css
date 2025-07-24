@@ -50,9 +50,11 @@ CSS INDEX
 01. common
 ******************************************************* 
 *************************************************************** */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;family=Teko:wght@300;400;500;600;700&amp;display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"); */
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: var(--clr-body-text);

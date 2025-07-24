@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;family=Teko:wght@300;400;500;600;700&amp;display=swap");
+
 *{
     box-sizing: border-box;
     
@@ -6,7 +8,7 @@ body{
     /* background-color: rgba(254, 244, 234, 0.2) !important; */
     /* background-color: rgba(63, 188, 215, 0.05) !important; */
     overflow-x: hidden !important;
-	font-family: "Inter", sans-serif !important;
+	font-family: "Poppins" !important;
 }
 .container{
     max-width: 90% !important;
@@ -700,7 +702,8 @@ body{
 
 .navbar-custom .nav-link:hover,
 .navbar-custom .dropdown-menu a:hover {
-	color: #ffffff !important;
+	color: #ffffff ;
+	border-radius: 5px;
 }
 
 .dropdown-menu {
@@ -708,7 +711,7 @@ body{
 }
 
 .dropdown-menu .dropdown-item {
-	color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0) !important;
 	    padding: 7px 20px;
     font-weight: 300;
 }
@@ -736,16 +739,19 @@ body{
   transition: all 0.3s ease;
   margin-top: 10px;
 }
-
+.phone-num{
+	font-size: 18px;
+	color: #000;
+}
 /* Optional: style hover link text */
 .dropdown-menu a:hover {
-  background-color: #1e378d;
+  background-color: #1e3a8a36;
   color: #fff;
   transition: all 0.3s ease;
 }
 .phone-icon {
-	background: white;
-	color: #1e378d;
+	background: #1e378d;
+	color: #ffffff;
 	border-radius: 50%;
 	padding: 8px;
 }
@@ -793,13 +799,14 @@ body{
 
 
 .navbar{
-    background-color: #1e3a8a !important;
+    background-color: #ffffff !important;
     box-shadow: 1px 1px 5px lightgray !important;
     padding: 10px 0px !important;
 }
 .navbar .nav-item .nav-link{
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 18px !important;
+	font-weight: 500;
 }
 .blue_text{
     color: #1e3a8a !important;
@@ -824,6 +831,8 @@ body{
 }
 footer{
     background-color: #1e3a8a !important;
+		padding-top: 40px;
+	padding-bottom: 15px;
 }
 .social_media i{
     color: #dbeafe !important;
@@ -976,7 +985,20 @@ footer h4{
 	}
 }
 
-
+.float {
+    position: fixed;
+    width: 58px;
+    height: 56px;
+    bottom: 120px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 37px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
 
  /* ------------------------------------------------------------------ MEDIA QUERY ----------------------------------------------------------------- */
 
