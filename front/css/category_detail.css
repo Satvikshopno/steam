@@ -729,11 +729,12 @@ body{
 .navbar{
     background-color: #1e3a8a !important;
     box-shadow: 1px 1px 5px lightgray !important;
-    padding: 15px 0px !important;
+    padding: 10px 0px !important;
 }
 .navbar .nav-item .nav-link{
     color: #ffffff !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
+	font-weight: 500;
 }
 .blue_text{
     color: #1e3a8a !important;

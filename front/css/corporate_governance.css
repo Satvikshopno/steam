@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
-    font-family: "Inter", sans-serif !important;
+    
 }
 body{
     /* background-color: rgba(254, 244, 234, 0.2) !important; */
     /* background-color: rgba(63, 188, 215, 0.05) !important; */
     overflow-x: hidden !important;
+	font-family: "Inter", sans-serif !important;
 }
 .container{
     max-width: 90% !important;
@@ -798,7 +799,7 @@ body{
 }
 .navbar .nav-item .nav-link{
     color: #ffffff !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 .blue_text{
     color: #1e3a8a !important;
