@@ -1411,7 +1411,7 @@ footer{
     color: white !important;
 }
 footer p {
-    color: #dbeafe !important;
+    color: #ffffff !important;
     font-size: 16px !important;
 }
 footer h4{
@@ -1425,6 +1425,7 @@ footer h4{
 }
 .footer_link:hover{
     color: white !important;
+	padding-left: 4px !important;
 }
 .no-after::after {
 	display: none;
@@ -9076,7 +9077,13 @@ svg.web-design circle {
     color: white;
     padding: 10px 20px;
 }
-
+.blog_content:hover{
+	border: 1px solid beige;
+    border-radius: 50px;
+    background: #1e3a8a;
+    color: white;
+    padding: 10px 20px;
+}
 .blog-detail-page{
 	display: flex;
 	align-items: center;
@@ -9095,3 +9102,24 @@ svg.web-design circle {
     border-color: rgb(30 58 138 / 11%);
     border-image: initial;
 }
+
+.footer_image {
+    position: relative;
+    background-image: url('../img/footer/banner3.png'); /* Go up one folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+    z-index: 1;
+    }
+ 
+    .footer_image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    }
