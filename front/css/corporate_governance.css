@@ -881,6 +881,7 @@ footer h4{
     border-bottom: 2px solid white !important;
     padding-bottom: 5px;
     text-align: center;
+	/* z-index: 1; */
 }
 .section-title{
 	color: #333 !important;
@@ -927,7 +928,21 @@ footer h4{
 }
 
 
+.image_1 {
+    position: relative;
+    overflow: hidden;
+}
 
+.image_1::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 45, 93, 0.32); /* 32% opacity navy */
+    /* z-index: 1; */
+}
 
 
 .contact_us_boxes .grid-container {
@@ -938,7 +953,7 @@ footer h4{
 	margin: auto;
 }
 .contact_us_boxes .card {
-	border: 1px solid #e50000;
+	border: 1px solid #1e3a8a4f;
 	border-radius: 20px;
 	padding: 20px;
 	background-color: #fff;
