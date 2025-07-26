@@ -4327,6 +4327,7 @@ svg.web-design circle {
 }
 .product-img img {
 	height: 100%;
+	border-radius: 5px;
 }
 .product-inner {
 	display: flex;

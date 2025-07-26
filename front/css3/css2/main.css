@@ -4506,6 +4506,7 @@ svg.web-design circle {
 }
 .product-img img {
 	height: 550px;
+	    border-radius: 10px;
 }
 
 .product-inner {
