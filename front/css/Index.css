@@ -984,12 +984,12 @@ footer h4 {
 
 .home_banner .carousel-control-prev {
 	left: 25px;
-	background: #d8d8d8;
+	/* background: #d8d8d8; */
 }
 
 .home_banner .carousel-control-next {
 	right: 25px;
-	background: #d8d8d8;
+	/* background: #d8d8d8; */
 }
 
 .category_title {
