@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="./front/css3/css2/animated-circle.css">
     <link rel="stylesheet" href="./front/css3/css2/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
@@ -364,7 +364,8 @@
                                             <div class="phone_outer_div d-flex "><img src="./img/phone_icon.png"
                                                     class="phone_icon m-0 p-0 " alt=" "></div>
                                             <span class="ms-2"
-                                                style="color: aliceblue; font-size: 18px; font-weight: 500;">+91 20 26930908 / 26930960 / 61</span>
+                                                style="color: aliceblue; font-size: 18px; font-weight: 500;">+91 20
+                                                26930908 / 26930960 / 61</span>
                                         </div>
 
                                     </div>
@@ -418,14 +419,59 @@
                                 <img src="img/Resources/Download1.png" class="img-thumbnail"
                                     alt="Unitech Valves & Automation">
                             </div>
-                            <a href="https://drive.google.com/file/d/1S_ibRjn18HPUDJ8aWj-NSIsGYjlHI-KU/view?usp=sharing"
+                            <!-- <a href="https://drive.google.com/file/d/1S_ibRjn18HPUDJ8aWj-NSIsGYjlHI-KU/view?usp=sharing"
                                 download><span class="section-subtitle wow fadeInUp mt-2" data-wow-delay="0.1s">Download
+                                    Catalogue</span></a> -->
+                            <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"><span
+                                    class="section-subtitle wow fadeInUp mt-2" data-wow-delay="0.1s">Download
                                     Catalogue</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">Steam Equipments Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="downloadForm">
+                            <div class="form-group d-flex align-items-center">
+                                <label class="font-weight-bold mr-2 mb-0"
+                                    style="color: #222; font-size: 18px; min-width: 160px;">Company Name:</label>
+                                <p class="form-control-plaintext mb-0" style="font-size: 16px;">Steam Equipments Limited
+                                </p>
+                            </div>
+                            <div class="form-group d-flex align-items-center">
+                                <label class="font-weight-bold mr-2 mb-0"
+                                    style="color: #222; font-size: 18px; min-width: 160px;">Email:</label>
+                                <p class="form-control-plaintext mb-0" style="font-size: 16px;">
+                                    Sales@steamequipments.com</p>
+                            </div>
+                            <div class="form-group d-flex align-items-center">
+                                <label class="font-weight-bold mr-2 mb-0"
+                                    style="color: #222; font-size: 18px; min-width: 160px;">Phone Number:</label>
+                                <p class="form-control-plaintext mb-0" style="font-size: 16px;">+91 2026930908</p>
+                            </div>
+
+                            <div class="form-group d-flex justify-content-center align-items-center mt-4 text-center">
+                                <a href="https://drive.google.com/file/d/1S_ibRjn18HPUDJ8aWj-NSIsGYjlHI-KU/view?usp=sharing"
+                                    target="_blank" class="btn"
+                                    style="background-color: #081f3b; border-color: #081f3b; color: #fff;">
+                                    Download Catalogue
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- about area end -->
 
         <!-- cta area start -->
@@ -517,7 +563,7 @@
                     <div class="footer-widget wow fadeInUp" data-wow-delay="0.9s">
                         <h4 class="m-0 px-0 pt-0 pb-0 white_text">Contact Info</h4>
                         <hr style="color: white; width: 100px;" />
-                         <h5 style="color: white;">Steam Equipments Limited</h5>
+                        <h5 style="color: white;">Steam Equipments Limited</h5>
                         <p>Address: PLOT NO – 44, TINY, Industrial Est, Tyni Audyogic Wasahat, Kondhwa Budruk, Pune,
                             Maharashtra 411048</p>
                         <p>Phone:+91 2026930908</p>
@@ -567,7 +613,7 @@
     <script src="front/js/aminated-circle.js"></script>
     <script src="front/js/main.js"></script>
     <script src="front/js/product-slider.js"></script>
-     <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             const footer = document.getElementById("links");
 
