@@ -713,7 +713,7 @@ body {
 
 @media (min-width: 1440px) {
 	.ourproductsec:before {
-		width: 100%;
+		/* width: 100%; */
 	}
 
 	.ourproductsec {

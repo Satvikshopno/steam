@@ -1288,7 +1288,7 @@ footer h4 {
 	width: 50% !important;
 }
 
-.overlay2 button {
+.overlay2 a {
 	background-color: white !important;
 	color: black !important;
 	font-size: 16px !important;
@@ -1858,7 +1858,7 @@ footer h4 {
 
 .product-img img {
 	height: 500px;
-	width: 650px;
+	width: 570px;
 }
 
 .card {
@@ -1953,3 +1953,5 @@ footer h4 {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: -1;
     }
+
+	
