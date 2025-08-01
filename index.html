@@ -41,28 +41,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
+<style>
+    .carousel-item {
+        opacity: 0;
+        transform: scale(1.1); 
+        transition: transform 1s ease, opacity 1s ease;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
 
+    .carousel-item.active {
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+        z-index: 2;
+    }
+
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+    }
+</style>
 <body>
+     <!-- <div id="header-placeholder"></div> -->
 
     <!-- //header// -->
     <nav class="navbar navbar-expand-xl navbar-custom">
         <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="img/header/steamLogo.jpg" alt="STEAM Logo">
             </a>
 
-            <!-- Hamburger toggle button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class='bx bx-menu text-primary-100 fs-1'></i>
             </button>
 
-            <!-- Navbar items -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#"></a></li> -->
                     <li class="nav-item dropdown position-static">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Products
@@ -70,7 +89,6 @@
                         <div class="dropdown-menu w-100 mt-0 p-4 border-0 shadow bg-white"
                             style="left: 0; right: 0; top: 105px;">
                             <div class="row">
-                                <!-- Column 1 -->
                                 <div class="col-md-3 product_1">
                                     <h6 class="">Sampling System Solutions</h6>
                                     <ul class="list-unstyled">
@@ -95,7 +113,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Column 2 -->
                                 <div class="col-md-3 product_1">
                                     <h6 class="">Analytical Division</h6>
                                     <ul class="list-unstyled">
@@ -115,7 +132,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Column 3 -->
                                 <div class="col-md-3 product_1">
                                     <h6 class="">Environmental Solutions</h6>
                                     <ul class="list-unstyled">
@@ -132,7 +148,6 @@
                                     </ul>
                                 </div>
 
-                                <!-- Column 4 -->
                                 <div class="col-md-3 product_1">
                                     <h6 class="">Steam Engineering</h6>
                                     <ul class="list-unstyled">
@@ -187,7 +202,6 @@
                     <li class="nav-item"><a class="nav-link" href="/Contact-Us.html">Contact Us</a></li>
                 </ul>
 
-                <!-- Phone -->
                 <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0 gap-2">
                     <div class="phone-icon d-flex justify-content-center align-items-center">
                         <i class="bx bx-phone fs-5"></i>
@@ -224,7 +238,6 @@
                                                 </li>
 
                                                 <li class="menu-has-child"> <a href="about-us.html">About us
-                                                        <!-- <i class="fas fa-chevron-down"></i> -->
                                                         <i class='bxr bx-chevron-down'></i>
 
                                                     </a>
@@ -300,8 +313,7 @@
                         <button class="btn d-block d-sm-flex contact_btn">Contact Us</button>
                     </div>
                 </div> -->
-                <div id="carouselExampleFade" class="carousel slide carousel-fade home_banner animate__animated"
-                    data-bs-ride="carousel">
+               <div id="carouselExampleFade" class="carousel slide home_banner animate__animated" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="img/banner/main1.png" class=" img-fluid w-100">
@@ -666,7 +678,6 @@
                         <h4 class="m-0 px-0 pt-0 pb-0 white_text">Links</h4>
                         <hr style="color: white; width: 100px;" />
                         <a href="/" class="footer_link m-0 px-0 pt-0 pb-2">
-                            <!-- <i class='bxr  bx-chevrons-right'></i> -->
                             Home</a>
                         <a href="/about-us.html" class="footer_link m-0 px-0 pt-0 pb-2">Company Overview</a>
                         <a href="/certification.html" class="footer_link m-0 px-0 pt-0 pb-2"> Certification</a>
@@ -1144,6 +1155,15 @@
             observer.observe(footer);
         });
     </script>
+
+     <script>
+    // Load header.html
+    fetch("/front/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
