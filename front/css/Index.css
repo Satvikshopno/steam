@@ -1340,7 +1340,37 @@ footer h4 {
 	width: 70% !important;
 }
 
-
+.Exhibitions_carousel .owl-nav .custom-prev {
+      position: absolute !important;
+    background-color: rgb(255 255 255 / 70%) !important;
+    color: #000 !important;
+    padding-top: 4px !important;
+    padding-right: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 4px !important;
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    border-radius: 50% !important;
+    pointer-events: auto !important;
+    left: -2.5% !important;
+    top: 31%;
+    transition: 0.5s !important;
+}
+.Exhibitions_carousel .owl-nav .custom-next {
+position: absolute !important;
+    background-color: rgb(255 255 255 / 70%) !important;
+    color: #000 !important;
+    padding-top: 4px !important;
+    padding-right: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 4px !important;
+    font-size: 25px !important;
+    border-radius: 50% !important;
+    top: 31%;
+    pointer-events: auto !important;
+    right: 0 !important;
+	 transition: 0.5s !important;
+}
 
 
 
