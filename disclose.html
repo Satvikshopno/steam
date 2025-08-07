@@ -34,102 +34,104 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <style>
-      .table-responsive table th, .table-responsive table td {
-    white-space: normal;
-    word-wrap: break-word;
-    vertical-align: top;
-  }
-
-  .custom-table {
-    font-size: 0.95rem;
-  }
-
-  @media (max-width: 768px) {
-    h3 {
-      font-size: 1.2rem;
+    .table-responsive table th,
+    .table-responsive table td {
+        white-space: normal;
+        word-wrap: break-word;
+        vertical-align: top;
     }
 
-    .navbar-toggler {
-      border: none;
+    .custom-table {
+        font-size: 0.95rem;
     }
 
-    .navbar-toggler:focus {
-      box-shadow: none;
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .phone-num {
+            font-size: 14px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .footer-widget h4 {
+            font-size: 1.2rem;
+        }
+
+        .footer_link {
+            font-size: 0.95rem;
+        }
+
+        .social-icons a {
+            font-size: 22px !important;
+        }
     }
 
-    .phone-num {
-      font-size: 14px;
-      display: block;
-      margin-top: 10px;
-    }
+    @media (max-width: 576px) {
+        .bn-breadcrumb-title {
+            font-size: 1.5rem !important;
+        }
 
-    .footer-widget h4 {
-      font-size: 1.2rem;
-    }
+        .custom-table th,
+        .custom-table td {
+            font-size: 13px !important;
+        }
 
-    .footer_link {
-      font-size: 0.95rem;
-    }
+        .table-responsive {
+            overflow-x: auto;
+        }
 
-    .social-icons a {
-      font-size: 22px !important;
-    }
-  }
+        .footer-widget iframe {
+            height: 180px;
+        }
 
-  @media (max-width: 576px) {
-    .bn-breadcrumb-title {
-      font-size: 1.5rem !important;
-    }
+        .float {
+            bottom: 60px;
+            right: 10px;
+        }
 
-    .custom-table th,
-    .custom-table td {
-      font-size: 13px !important;
-    }
+        .navbar-collapse {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-    .table-responsive {
-      overflow-x: auto;
-    }
-
-    .footer-widget iframe {
-      height: 180px;
+        .dropdown-menu {
+            position: static !important;
+            float: none;
+        }
     }
 
     .float {
-      bottom: 60px;
-      right: 10px;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 15px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
     }
 
-    .navbar-collapse {
-      background: #fff;
-      padding: 10px;
-      border-radius: 5px;
+    .my-float {
+        margin-top: 16px;
     }
-
-    .dropdown-menu {
-      position: static !important;
-      float: none;
-    }
-  }
-
-  .float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 15px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-  }
-
-  .my-float {
-    margin-top: 16px;
-  }
 </style>
+
 <body>
     <nav class="navbar navbar-expand-xl navbar-custom">
         <div class="container-fluid">
