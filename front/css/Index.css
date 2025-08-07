@@ -1368,7 +1368,7 @@ position: absolute !important;
     border-radius: 50% !important;
     top: 31%;
     pointer-events: auto !important;
-    right: 0 !important;
+    right: -15px !important;
 	 transition: 0.5s !important;
 }
 
@@ -1760,6 +1760,10 @@ position: absolute !important;
 	}
 
 }
+.product-img img {
+	height: 500px;
+	width: 570px;
+}
 
 @media (max-width: 1024px) {
 	.Sepl_about {
@@ -1769,6 +1773,7 @@ position: absolute !important;
 
 	.product-img img {
 		max-width: 100%;
+		width: 630px;
 		height: 200px !important;
 		object-fit: cover;
 	}
@@ -1886,10 +1891,7 @@ position: absolute !important;
 	align-items: flex-end;
 }
 
-.product-img img {
-	height: 500px;
-	width: 570px;
-}
+
 
 .card {
 	position: relative;

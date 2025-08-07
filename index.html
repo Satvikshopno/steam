@@ -119,7 +119,7 @@
         background-color: white;
         color: #333;
         width: 100%;
-        max-width: 300px;
+        /* max-width: 300px; */
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,12 +139,16 @@
         text-align: left;
     }
 
-    .event-details p {
+    .event-details a  {
         margin: 5px 0 0;
         font-size: 16px;
         font-weight: 500;
+        text-decoration: none;
+        color: #4e4e4e;
     }
-
+   .event-details p  {
+        margin:0;
+    }
     .date-badge {
         position: absolute;
         top: 5px;
@@ -162,9 +166,14 @@
             height: auto;
         }
 
-        .main-photo-section,
+        .main-photo-section
+        {
+               height: 75vh;
+            flex: none;
+            width: 100%;
+        }
         .info-section {
-            height: 50vh;
+            height: 100vh;
             flex: none;
             width: 100%;
         }
@@ -181,9 +190,18 @@
         }
 
         .event-card {
-            max-width: 300px;
+            /* max-width: 300px; */
         }
+
+
+
     }
+     @media (max-width: 1024px) {
+                .product-area1 {
+    padding-top: 30px;
+    /* margin: 0 auto; */
+}
+     }
 </style>
 
 <body>
@@ -647,28 +665,28 @@
                             <img src="img/Steam1.jpg" alt="ADIPEC Expo 2022 | Abu Dhabi, UAE">
                             <div class="date-badge">2023<br>24 Feb</div>
                             <div class="event-details">
-                                <p>ADIPEC Expo 2022 | Abu Dhabi, UAE</p>
+                               <a href="/Automation_Expo_2022.html"><p>ADIPEC Expo 2022 | Abu Dhabi, UAE</p></a> 
                             </div>
                         </div>
                         <div class="event-card">
                             <img src="img/steam2.jpg" alt="Elecrama 2023">
                             <div class="date-badge">2023<br>18-19 Feb</div>
                             <div class="event-details">
-                                <p>Automation Expo 2022</p>
+                                <a href="/Automation_Expo_2022.html"><p>Automation Expo 2022</p></a> 
                             </div>
                         </div>
                         <div class="event-card">
                             <img src="img/steam3.jpg" alt="Elecrama 2023">
                             <div class="date-badge">2023<br>18-19 Feb</div>
                             <div class="event-details">
-                                <p>ADIPEC 2021 | Abu Dhabi, UAE</p>
+                                <a href="/Automation_Expo_2022.html"><p>ADIPEC 2021 | Abu Dhabi, UAE</p></a> 
                             </div>
                         </div>
                         <div class="event-card">
                             <img src="img/steam4.jpg" alt="Elecrama 2023">
                             <div class="date-badge">2023<br>18-19 Feb</div>
                             <div class="event-details">
-                                <p>ELECRAMA 2020</p>
+                                <a href="/Automation_Expo_2022.html"><p>ELECRAMA 2020</p></a> 
                             </div>
                         </div>
                     </div>
@@ -777,56 +795,86 @@
                 <div class="blog-card shadow mb-4 animate__animated" id="blog_box1">
 
                     <div class="blog-img">
-                        <a href="Blog_details.html" class="blog-link"><img src="./img/1751884300_686ba20c59b34.jpg"
+                        <a href="Blog_details.html" class="blog-link"><img src="./img/Blog1.png"
                                 alt="Blog 1" /></a>
                     </div>
                     <div class="blog-content">
                         <small>December 5, 2023</small>
-                        <h5 class="truncate-2">The Agricultural Marvel: Potassium Chloride By JKM Chemtrade</h5>
+                        <h5 class="truncate-2">Understanding SWAS: From FIT to Modular Steam & Water Analysis Systems</h5>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="blog-card shadow mb-4 animate__animated" id="blog_box2">
                     <div class="blog-img">
-                        <a href="Blog_details.html" class="blog-link"><img src="./img/1751884381_686ba25d2a6f9.jpg"
+                        <a href="Blog_details.html" class="blog-link"><img src="./img/Chiller-300x300.jpg"
                                 alt="Blog 2" /></a>
                     </div>
                     <div class="blog-content">
                         <small>December 5, 2023</small>
-                        <h5 class="truncate-2">Unlocking The Power Of Potassium Chloride: A Comprehensive Guide</h5>
+                        <h5 class="truncate-2">How Sample Coolers & Chillers Enhance Steam Sampling Accuracy</h5>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="blog-card shadow mb-4 animate__animated" id="blog_box3">
                     <div class="blog-img">
-                        <a href="Blog_details.html" class="blog-link"> <img src="/img/1751884432_686ba2906fb41.jpg"
+                        <a href="Blog_details.html" class="blog-link"> <img src="/img/8800A-300x203.png"
                                 alt="Blog 3" /></a>
                     </div>
                     <div class="blog-content">
                         <small>December 5, 2023</small>
-                        <h5 class="truncate-2">Who Is The Manufacturer Of Anhydrous Sodium Sulphate In India?</h5>
+                        <h5 class="truncate-2">Achieving Trace Moisture Measurement with HTF Al₂O₃ Dew‑Point Sensors?</h5>
                     </div>
                 </div>
                 <div class="blog-card shadow mb-4 animate__animated" id="blog_box4">
                     <div class="blog-img">
-                        <a href="Blog_details.html" class="blog-link"><img src="/img/1751884470_686ba2b6ecc6e.jpg"
+                        <a href="Blog_details.html" class="blog-link"><img src="/img/Oxypink-300x300.png"
                                 alt="Blog 3" /></a>
                     </div>
                     <div class="blog-content">
                         <small>December 5, 2023</small>
-                        <h5 class="truncate-2">Who Is The Manufacturer Of Anhydrous Sodium Sulphate In India?</h5>
+                        <h5 class="truncate-2">In‑Situ O₂ Monitoring: Oxypink Zirconia Probe for Harsh Combustion Environments</h5>
                     </div>
                 </div>
                 <div class="blog-card shadow mb-4 animate__animated" id="blog_box5">
                     <div class="blog-img">
-                        <a href="Blog_details.html" class="blog-link"> <img src="/img/1751884470_686ba2b6ecc6e.jpg"
+                        <a href="Blog_details.html" class="blog-link"> <img src="/img/2000B-219x300.png"
                                 alt="Blog 3" /></a>
                     </div>
                     <div class="blog-content">
                         <small>December 5, 2023</small>
-                        <h5 class="truncate-2">Who Is The Manufacturer Of Anhydrous Sodium Sulphate In India?</h5>
+                        <h5 class="truncate-2">Process Gas Analyzers: Comparing TCD, Infrared, Hydrocarbon & Nitrogen Systems</h5>
+                    </div>
+                </div>
+                     <div class="blog-card shadow mb-4 animate__animated" id="blog_box5">
+                    <div class="blog-img">
+                        <a href="Blog_details.html" class="blog-link"> <img src="/img/LXT330-263x300.png"
+                                alt="Blog 3" /></a>
+                    </div>
+                    <div class="blog-content">
+                        <small>December 5, 2023</small>
+                        <h5 class="truncate-2"> Waste‑Water & Water Quality Analyzers: Applications in Industrial Monitoring</h5>
+                    </div>
+                </div>
+                     <div class="blog-card shadow mb-4 animate__animated" id="blog_box5">
+                    <div class="blog-img">
+                        <a href="Blog_details.html" class="blog-link"> <img src="/img/New Project (17).png"
+                                alt="Blog 3" /></a>
+                    </div>
+                    <div class="blog-content">
+                        <small>December 5, 2023</small>
+                        <h5 class="truncate-2">Modular vs. Rack‑Mounted SWAS: Which Steam & Water Analysis System Fits Your Plant?</h5>
+                    </div>
+                </div>
+                     <div class="blog-card shadow mb-4 animate__animated" id="blog_box5">
+                    <div class="blog-img">
+                        <a href="Blog_details.html" class="blog-link"> <img src="/img/Sample-Coolers.jpg"
+                                alt="Blog 3" /></a>
+                    </div>
+                    <div class="blog-content">
+                        <small>December 5, 2023</small>
+                        <h5 class="truncate-2">Inside Sample Coolers: How Heat Exchangers Protect Your Analyzers from High‑Temperature Steam</h5>
                     </div>
                 </div>
             </div>

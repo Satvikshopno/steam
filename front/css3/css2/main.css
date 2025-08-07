@@ -10685,6 +10685,7 @@ background-color: #1e3a8a14;
 	padding-left: 15px !important;
 	padding-top: 15px !important;
 	padding-bottom: 15px !important;
+	width: 20px;
 }
 .custom-table tbody tr:nth-child(even) {
 	background-color: #eaeefa !important;
@@ -11000,7 +11001,9 @@ background-color: #1e3a8a14;
 	}
 
 }
-
+.main_body{
+	width: 1200px;
+}
 @media (min-width: 1440px) {
 	.ourproductsec:before {
 		/* width: 100%; */
@@ -11013,6 +11016,9 @@ background-color: #1e3a8a14;
 	.Footer_1 {
 		width: 100%;
 	}
+	.main_body{
+	width: 100%;
+}
 }
 
 .ourproductdiv .ourproduct--title {
@@ -11710,6 +11716,92 @@ footer h4 {
 	text-decoration: none;
 	color: #ffffff;
 }
+.content {
+  /* padding: 40px 5%; */
+}
+
+.main-image {
+  position: relative;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+    background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.date-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1e3a8a;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.gallery {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.event-meta {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #333;
+}
+
+.event-meta .tags {
+  display: flex;
+  gap: 20px;
+  color: #000000;
+  font-weight: 500;
+}
+.event-meta .tag i {
+  margin-right: 5px;
+}
+
+.event-meta hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.event-meta .date-location {
+  color: #666;
+}
+
+.gallery img {
+  width: calc(25% - 10px);
+  border-radius: 4px;
+}
+
+.sub-image {
+  margin-top: 30px;
+}
+
+.sub-image img {
+  width: 100%;
+  border-radius: 4px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.social-share {
+  margin-top: 20px;
+}
+
+.social-share a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
 /* ------------------------------------------------------------------ MEDIA QUERY ----------------------------------------------------------------- */
 
 
@@ -11970,3 +12062,4 @@ footer h4 {
 	background-size: cover;
 
   }
+
