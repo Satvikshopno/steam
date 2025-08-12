@@ -6677,7 +6677,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media (max-width: 767px) {
 	.cta-content-title {
-		font-size: 30px;
+		font-size: 25px;
 	}
 }
 
@@ -11925,22 +11925,31 @@ footer h4 {
 		/* width: 1200px !important; */
 	}
 }
-
+.email-style p{
+	margin: 0; 
+	font-size: 18px;
+	 color: #000000cf;
+}
 @media(max-width:425px) {
 	.float {
-		position: fixed;
-		width: 58px;
-		height: 56px;
-		bottom: 10px;
-		right: 0%;
-		background-color: #25d366;
-		color: #FFF;
-		border-radius: 50px;
-		text-align: center;
-		font-size: 37px;
-		box-shadow: 2px 2px 3px #999;
-		z-index: 100;
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        bottom: 10px;
+        right: 6%;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 31px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
 	}
+	.email-style p{
+	margin: 0; 
+	font-size: 16px;
+	 color: #000000cf;
+}
 }
 
 @media(max-width:1400px) {
