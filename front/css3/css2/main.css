@@ -8659,6 +8659,37 @@ only screen and (min-width: 768px) and (max-width: 991px),
 	width: 25%;
 }
 
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .icon-box {
+        background: #113e7724;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .icon-box i {
+        font-size: 20px;
+        color: #000;
+    }
+
+    .contact-text {
+        margin: 0;
+        font-size: 18px;
+        color: #000000cf;
+        min-height: 60px; /* Ensures same height for all */
+        display: flex;
+        align-items: center;
+    }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.contact-top-item {
 		width: 33.3333333333%;
@@ -11015,7 +11046,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 	position: absolute;
 	content: "";
 	background-color: #1e3a8a26;
-	width: 100%;
+	/* width: 100%; */
 	height: 100%;
 	z-index: -1;
 	border-radius: 300px 0 0 300px;
@@ -11700,7 +11731,7 @@ footer h4 {
 
 
 .image_section {
-	width: 1200px;
+	/* width: 1200px; */
 	margin: 0 auto;
 }
 
@@ -12005,7 +12036,11 @@ footer h4 {
 	font-size: 25px;
 }
 
-
+.contact-Feel h2{
+font-size: 48px; 
+font-weight: 600; 
+line-height: 1.2;
+}
 
 .theme-btn1:before {
 	position: absolute;
@@ -12109,7 +12144,7 @@ footer h4 {
     width: 100%;
 }
 .image_section {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
 }
 	.product-area {
@@ -12192,4 +12227,9 @@ footer h4 {
 	.navbar .dropdown:hover .dropdown-menu{
 		width: 400px !important;
 	}
+	.contact-Feel h2{
+font-size: 30px; 
+font-weight: 600; 
+line-height: 1.2;
+}
 }

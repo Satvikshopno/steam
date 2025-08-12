@@ -2140,6 +2140,10 @@ display: -webkit-box;
     color: #113e77;
 
 }
+.phone-num {
+    font-size: 18px;
+    color: #000;
+}
 @media (max-width:767px) {
 .card {
     padding: 10px;
