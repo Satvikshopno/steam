@@ -1927,6 +1927,7 @@ footer h4 {
 
 .dropdown-menu {
 	background-color: #1e378d;
+	padding: 20px;
 }
 
 .dropdown-menu .dropdown-item {
@@ -12234,11 +12235,13 @@ line-height: 1.2;
 		font-size: 22px !important;
 	}
 	.navbar .dropdown:hover .dropdown-menu{
-		width: 400px !important;
+		width: 350px !important;
+		padding: 10px;
 	}
 	.contact-Feel h2{
 font-size: 30px; 
 font-weight: 600; 
 line-height: 1.2;
+padding: 0px;
 }
 }
