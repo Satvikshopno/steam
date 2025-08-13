@@ -1993,7 +1993,7 @@ footer h4 {
 
 @media (max-width: 1024px) {
 	.navbar {
-		width: 100%;
+		width: 1200px;
 	}
 
 	.navbar-nav {
@@ -12158,7 +12158,7 @@ line-height: 1.2;
     margin: 0 auto;
 }
 	.product-area {
-		padding: 0px 0px 50px 0px;
+		padding: 0px 0px 0px 0px;
 	}
 
 	.blog_details h2 {
