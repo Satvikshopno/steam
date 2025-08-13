@@ -63,8 +63,15 @@ hr {
 	color: rgb(0, 0, 0);
 	padding: 7px 20px;
 	font-weight: 300;
+	 white-space: normal;       /* Text ko multi-line wrap karne ke liye */
+  word-wrap: break-word;     /* Bade words ko todne ke liye */
+  overflow-wrap: break-word; 
 }
-
+.product_1 .dropdown-item {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 .phone-contact {
 	color: white;
 	display: flex;
@@ -2154,8 +2161,8 @@ display: -webkit-box;
     margin-bottom: 0.5rem;
 }
 .navbar .dropdown:hover .dropdown-menu {
-
-    width: 400px !important;
+   padding: 10px !important;
+    /* width: 400px !important; */
 }
 element.style {
 }
@@ -2172,6 +2179,9 @@ element.style {
     font-size: 31px;
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
+}
+.navbar-brand img {
+	height: 60px;
 }
 }
 
