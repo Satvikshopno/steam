@@ -1927,7 +1927,7 @@ footer h4 {
 
 .dropdown-menu {
 	background-color: #1e378d;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 .dropdown-menu .dropdown-item {

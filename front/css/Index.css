@@ -63,8 +63,8 @@ hr {
 	color: rgb(0, 0, 0);
 	padding: 7px 20px;
 	font-weight: 300;
-	 white-space: normal;       /* Text ko multi-line wrap karne ke liye */
-  word-wrap: break-word;     /* Bade words ko todne ke liye */
+	 /* white-space:inherit;       */
+  word-wrap: break-word;     
   overflow-wrap: break-word; 
 }
 .product_1 .dropdown-item {
@@ -146,7 +146,7 @@ hr {
 			transition: all 0.3s ease;
 			margin-top: 0;
 			top: 55px;
-
+/* min-width:max-content; */
 		}
 
 		.navbar .dropdown-menu {
