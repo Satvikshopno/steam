@@ -1768,7 +1768,7 @@ textarea:focus::placeholder {
 
 .navbar .nav-item .nav-link {
 	color: #000000 !important;
-	font-size: 18px !important;
+	font-size: 17px !important;
 	font-weight: 500;
 }
 
@@ -1910,7 +1910,7 @@ footer h4 {
 }
 
 .navbar-nav {
-	gap: 15px;
+	gap: 10px;
 }
 
 .navbar-custom .nav-link,
@@ -11431,7 +11431,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .navbar .nav-item .nav-link {
 	color: #000000 !important;
-	font-size: 18px !important;
+	font-size: 17px !important;
 	font-weight: 500;
 	padding: 10px;
 }
