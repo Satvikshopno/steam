@@ -2029,6 +2029,9 @@ footer h4 {
 			visibility: visible;
 			transition: all 0.3s ease;
 			margin-top: 0;
+			min-width:max-content;
+            border: 1px solid #c3c3c3 !important;
+			padding: 0px !important;
 		}
 
 		.navbar .dropdown-menu {
