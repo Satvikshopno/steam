@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <!-- <link rel="stylesheet" href="./front/css/product_detail.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ruluko&display=swap"
+        rel="stylesheet">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./front/css3/css2/bootstrap.min.css">
+    <link rel="stylesheet" href="./front/css3/css2/animate.min.css">
+    <link rel="stylesheet" href="./front/css3/css2/magnific-popup.css">
+    <link rel="stylesheet" href="./front/css3/css2/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./front/css3/css2/odometer.min.css">
+    <link rel="stylesheet" href="./front/css3/css2/nice-select.css">
+    <link rel="stylesheet" href="./front/css3/css2/jquery.rprogessbar.min.css">
+    <link rel="stylesheet" href="./front/css3/css2/meanmenu.css">
+    <link rel="stylesheet" href="./front/css3/css2/swipper.css">
+    <link rel="stylesheet" href="./front/css3/css2/animated-circle.css">
+    <link rel="stylesheet" href="./front/css3/css2/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Organization",
+		  "name": "Unitech Valves & Automation",
+		  "url": "https://www.unitechvalves.com/",
+		  "logo": "https://www.unitechvalves.com/assets/img/logo/unitech-valves-logo.png",
+		  "description": "Unitech Valves & Automation in Surat, Gujarat manufactures high‑quality industrial valves—ball, butterfly, gate, globe, check & more—with pneumatic actuators and flow meters. Contact us for reliable, ISO‑compliant valve solutions.",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Plot No. 6234, Road No. 62, GIDC, Sachin",
+			"addressLocality": "Surat",
+			"addressRegion": "Gujarat",
+			"postalCode": "394230",
+			"addressCountry": "IN"
+		  },
+		  "contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+91-99040 00342",
+			"contactType": "Sales",
+			"areaServed": "IN",
+			"availableLanguage": "English"
+		  },
+		  "sameAs": [
+			"https://www.facebook.com/unitechvalves/",
+			"https://www.instagram.com/unitechvalves/",
+			"https://in.linkedin.com/company/unitech-valves",
+			"https://www.indiamart.com/unitech-valves-automation/"
+		  ],
+		  "founder": {
+			"@type": "Person",
+			"name": "Mr. Rajesh Choudhary"
+		  },
+		  "foundingLocation": {
+			"@type": "Place",
+			"name": "Surat, Gujarat"
+		  },
+		  "foundingDate": "2006",
+		  "keywords": [
+			"industrial valves",
+			"valve manufacturer",
+			"ball valve manufacturer",
+			"butterfly valve",
+			"gate valve supplier",
+			"check valve",
+			"globe valve",
+			"globe valve manufacturer",
+			"valve automation",
+			"pneumatic actuator",
+			"flow meter manufacturer",
+			"disk check valve",
+			"cast steel piston valve",
+			"forged valve manufacturer",
+			"piston valve",
+			"control valve",
+			"wafer check valve manufacturer"
+		  ]
+		}
+		</script>
+
+</head>
+
+<body class="animate__animated animate__fadeIn">
+
+  
+
+    <!-- header area start -->
+    <nav class="navbar navbar-expand-xl navbar-custom">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/header/steamLogo.jpg" alt="STEAM Logo">
+            </a>
+
+            <!-- Hamburger toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu text-primary-100 fs-1'></i>
+            </button>
+
+            <!-- Navbar items -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#"></a></li> -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <div class="dropdown-menu w-100 mt-0 p-4 border-0 shadow bg-white" style="left: 0; right: 0;">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-xl-3 col-sm-4  product_1">
+                                    <h6 class="">Sampling System Solutions</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="category_detail.html">Steam and Water
+                                                Analysis Systems
+                                                (SWAS)</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">SWAS Components</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Sample Coolers - Heat
+                                                Exchangers</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Close Circuit Cooling
+                                                Water Systems</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Instrument Valves</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Manifolds and
+                                                Fittings</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Local Instrument Racks
+                                                and Panels</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">FRP Panels for WEMS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 col-xl-2 col-sm-4  product_1">
+                                    <h6 class="">Analytical Division</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="category_detail.html">Process Gas
+                                                Analyzer</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Water Quality
+                                                Analyzer</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Dew Point Meter</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Flow Meters</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Sampling Systems</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Degassed Cation
+                                                Conductivity</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Chiller & HVAC</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Shelters</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 col-xl-3 col-sm-4  product_1">
+                                    <h6 class="">Environmental Solutions</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="category_detail.html">Continuous Emission
+                                                Monitoring System
+                                                (CEMS)</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Opacity Monitor</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Effluent Quality
+                                                Monitoring System</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Combustion Efficiency
+                                                Analyzer</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 col-xl-2 col-sm-4  product_1">
+                                    <h6 class="">Steam Engineering</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="category_detail.html">Steam Trap</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Steam Accessories</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Boiler House
+                                                Product</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Flash Steam and
+                                                Condensate Recovery</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Pressure Reducing & De
+                                                Super Heating
+                                                System</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-6  col-xl-2 col-sm-4  product_1">
+                                    <h6 class="">Process Equipments</h6>
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="category_detail.html">Storage Tanks</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Heat Exchanger</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="category_detail.html">⁠Reactors & Agitators</a></li>
+                                        <li><a class="dropdown-item" href="category_detail.html">Distillation Columns</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About
+                            us</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about-us.html">Company Profile</a></li>
+                            <li><a class="dropdown-item" href="certification.html">Certification</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="clients.html">Clients</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Investor
+                            Relations</a>
+                        <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="disclose.html">Disclosure</a></li>
+                            <li><a class="dropdown-item" href="corporate_governance.html">Corporate Governance</a></li>
+                            <li><a class="dropdown-item" href="boardofdirectors.html">Board Of Directors & KMPs</a></li>
+                            <li><a class="dropdown-item" href="financialinfo.html">Financial Information</a></li>
+                            <li><a class="dropdown-item" href="codeofconducts.html">Code of Conducts Ethics
+                                    Policies</a></li>
+                            <li><a class="dropdown-item" href="keycontact.html">Key Contact</a></li>
+                            <li><a class="dropdown-item" href="corporate.html">IPO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Industrial
+                        </a>
+                        <div class="dropdown-menu mt-0 p-4 border-0 shadow bg-white" >
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-4  product_1">
+                                    <!-- <h6 class="">All Industrial</h6> -->
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="industrial.html">Thermal Power Plants</a></li>
+                                        <li><a class="dropdown-item" href="industrial.html">Cogen-Sugar</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="industrial.html">Steel Plants</a></li>
+                                        <li><a class="dropdown-item" href="industrial.html">Cement Industry</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="industrial.html">Refineries</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </div>
+
+                              
+                              
+                                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-4  product_1">
+                                    <!-- <h6 class="">Steam Engineering</h6> -->
+                                    <ul class="list-unstyled">
+                                        <li><a class="dropdown-item" href="industrial.html">Chem, Petro-Chem, Pharma</a></li>
+                                        <li><a class="dropdown-item" href="industrial.html">Process Industry</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="industrial.html">Boiler Manufacturers</a></li>
+                                        <li><a class="dropdown-item" href="industrial.html">Oil & Gas</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="industrial.html">Environment</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Resources.html">Download Catalogue</a></li>
+                            <li><a class="dropdown-item" href="technical-data.html">Technical Data</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact-Us.html">Contact Us</a></li>
+                </ul>
+
+                <!-- Phone -->
+                <div class="d-flex align-items-center ms-lg-4 mt-3 mt-lg-0 gap-2">
+                    <div class="phone-icon d-flex justify-content-center align-items-center">
+                        <i class="bx bx-phone fs-5"></i>
+                    </div>
+                    <span class="phone-num">+91 20 26930908 / 26930960 / 61</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header area end -->
+    <!-- <header>
+        <div class="header-area">
+            <div class="header-topbar d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="header-topbar-info">
+                                <p><i class="fal fa-mobile"></i>+91 9904000336</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4">
+                            <div class="header-topbar-social">
+                                <a href="https://www.facebook.com/unitechvalves/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/unitechvalves/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="https://in.linkedin.com/company/unitech-valves" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-area-2">
+                <div class="header-menu-2">
+                    <div class="container">
+                        <div class="header-wrap-2">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-3 col-6">
+                                    <div class="header-logo-2"><a href="index.html"><img
+                                                src="assets/img/logo/unitech-valves-logo.png"
+                                                alt="Unitech Valves & Automation"></a></div>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-6">
+                                    <div class="header-menu-wrap-2">
+                                        <nav class="header-main-menu-2 mobile-menu" id="mobile-menu">
+                                            <ul>
+                                                <li><a href="index.html">Home</a></li>
+
+                                                <li class="menu-has-child"><a href="company-overview.html">About Us</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="company-overview.html">Company Overview</a></li>
+                                                        <li><a href="certification.html">Certifications</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li><a href="products.html">Products</a></li>
+
+                                                <li class="menu-has-child"><a href="#">Resources</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="download-catalogue.html">Download Catalogue</a>
+                                                        </li>
+                                                        <li><a href="operators.html">Operators</a></li>
+                                                        <li><a href="products-and-accessories.html">Products &amp;
+                                                                Accessories</a></li>
+                                                        <li><a href="technical-data.html">Technical Data</a></li>
+                                                    </ul>
+                                                </li>
+
+                                                <li><a href="clients.html">Clients</a></li>
+
+                                                <li><a href="contact-us.html">Contact Us</a></li>
+                                            </ul>
+                                        </nav>
+                                        <div class="menu-right-2">
+                                            <div class="header-menu-call-2 d-none d-md-inline-block d-lg-block">
+                                                <a href="tel:+91036259003" class="header-menu-call-btn"><i
+                                                        class="fas fa-phone-alt"></i></a>
+                                                <a href="tel:+919904000336" class="header-menu-call-number">+(91)
+                                                    9904000336</a>
+                                            </div>
+                                            <div class="menu-bar d-lg-none d-inline-block ml-25">
+                                                <div class="navbar-sign side-toggle">
+                                                    <span class="menu-line-1"></span>
+                                                    <span class="menu-line-2"></span>
+                                                    <span class="menu-line-3"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <section style="padding-top: 0px;" class="mt-5">
+        <div class=" px-4 image_section">
+            <div class="row">
+                <!-- Left Column with Scrollable Images (no horizontal scroll) -->
+                <div class="col-lg-6">
+                    <div class="row gap-5" style="flex-direction: column;">
+                        <div class="col-md-12">
+                            <h5>FIT SWAS (Fully integrated and tested Steam and Water Analysis Systems)</h5>
+                            <img src="./img/New Project (16).png" class="img-fluid w-100 mt-3" alt="Image 1">
+                        </div>
+                        <div class="col-md-12">
+                            <h5>FIT SWAS mounted in stainless steel shelter
+
+                            </h5>
+                            <img src="./img/New Project (17).png" class="img-fluid w-100 mt-3" alt="Image 2">
+                        </div>
+                        <div class="col-md-12">
+                            <h5>Shelter based SWAS inside view
+
+                            </h5>
+                            <img src="./img/New Project (18).png" class="img-fluid w-100 mt-3" alt="Image 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column with Sticky Accordion -->
+                <div class="col-lg-6"
+                    style="max-height: 1100px; overflow-y: auto; overflow-x: hidden; scrollbar-width: none; -ms-overflow-style: none;">
+                    <div class="p-3">
+
+                        <h4 class="fw-bold">Description</h4>
+                        <hr />
+                        <p class="Description_tab_text mt-2">
+                            Steam and water analysis system (SWAS) — A well designed Steam and Water Analysis system
+                            (SWAS) can help in monitoring the critical parameters in the steam. These parameters include
+                            pH, conductivity, silica, sodium, dissolved oxygen, phosphate and chlorides. A well designed
+                            SWAS must ensure that the sample is representative till the point of analysis. The SWAS
+                            system comprised of shelters, walk-way, rack mounted, panel mounted designed as per the
+                            customer requirements are the best suited for power plants. These are safe for use, provide
+                            good working area for user & system expert, yet protects the equipment from unauthorised
+                            usage / fiddling. Hence Steam Equipments designed new concept of FIT SWAS (Fully Integrated
+                            Steam & Water Analysis System). We have designed & developed Steam & water analysis system
+                            in accordance with the recommendations of ASME PTC 19.11 Part-II.
+                        </p>
+
+                        <h4 class="fw-bold mt-4">Features</h4>
+                        <hr />
+                        <ul class="Features_tab mt-2">
+                            <li>In compliance with ASME PTC 19.11</li>
+                            <li>Analysers and Sampling system at one place.</li>
+                            <li>Easy access for operator to all instruments.</li>
+                            <li>Design provides safety to the equipment ensuring longevity and trouble-free operation.
+                            </li>
+                            <li>Can be installed and commissioned in record time.</li>
+                            <li>With MOC as FRP, CRCA or SS-316 according to customer’s requirements.</li>
+                        </ul>
+
+                        <h4 class="fw-bold mt-4">Benefits</h4>
+                        <hr />
+                        <ul class="Features_tab mt-2">
+                            <li>Longer life of equipment ensured.</li>
+                            <li>High degree of safety to the operator ensured.</li>
+                            <li>Unauthorised usage totally prevented.</li>
+                            <li>Saves lot of time on site in terms of installation as well as commissioning.</li>
+                            <li>Saves a lot of civil work, tubing, piping and cabling.</li>
+                            <li>Plug and play construction.</li>
+                            <li>Saving in manpower and material costs on site, thus reducing project costing
+                                substantially.</li>
+                            <li>Saving in utility transport.</li>
+                        </ul>
+
+                        <h4 class="fw-bold mt-4">Applications</h4>
+                        <hr />
+                        <ul class="Features_tab mt-2">
+                            <li>Large Thermal Power Plants (Typically 800 to 1000 MW per unit).</li>
+                            <li>Combined Cycle Power Plants.</li>
+                            <li>Chemical / Petrochemical / Fertilizer / Refinery applications of sample conditioning and
+                                analysis.</li>
+                        </ul>
+
+                        <h4 class="fw-bold mt-4">Download</h4>
+                        <hr />
+                        <div class="mt-4">
+                            <a href="#" class="btn11">Download Fit-SWAS Catalog</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="s6 ourproductsec section_margin">
+        <div class="container">
+            <div class="ourproductdiv">
+                <div class="ourproduct--title">
+                    <h2>Our Categories</h2>
+                </div>
+                <div class="ourproduc--buttondiv">
+
+                    <button class="btn productlist--div">
+                        <a href="">FIT SWAS</a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Modular System </a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Combined System </a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Walkway Type System </a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Open Free Standing Rack </a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Plate Mounted System</a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Lab Sampling Module</a>
+                    </button>
+
+                    <button class="btn productlist--div">
+                        <a href="">Containerised Systems</a>
+                    </button>
+                </div>
+                <div class="viewallproductdiv">
+                    <a href="https://jkmchemtrade.com/all-categories">view all product list</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid mt-3 mb-5 pt-lg-5 industrial-weserve" id="benefits">
+        <h2 class="h3 text-center pt-1 pb-3 mb-4 mb-lg-4">Industries We Serve</h2>
+        <div class="row mb-5">
+            <div class="col-md-3 border-end-lg px-2">
+                <div class="text-center">
+                    <img src="img/Product/chemical-industries.png" alt="Chemical Industries"
+                        class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Chemical Industries</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 border-end-lg px-2">
+                <div class="text-center">
+                    <img src="img/Product/pharmaceutical.png" alt="Pharmaceutical Industries"
+                        class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Pharmaceutical Industries</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 border-end-lg px-2">
+                <div class="text-center">
+                    <img src="img/Product/petrochemical.png" alt="Petrochemical Plant" class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Petrochemical Plant</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 px-2">
+                <div class="text-center">
+                    <img src="img/Product/textile-industries.png" alt="Textile Industries" class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Textile Industries</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 border-end-lg px-2">
+                <div class="text-center">
+                    <img src="img/Product/chemical-industries.png" alt="OEM &amp; Contrators"
+                        class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">OEM &amp; Contrators</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 border-end-lg px-2">
+                <div class="text-center">
+                    <img src="img/Product/paper-industry.png" alt="Pulp, Paper, Sugar Industries"
+                        class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Pulp, Paper, Sugar Industries</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 border-end-lg px-2">
+                <div class="text-center">
+                    <img src="img/Product/water-treatment-plant.png" alt="Water Treatment Plant"
+                        class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Water Treatment Plant</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3 px-2">
+                <div class="text-center">
+                    <img src="img/Product/steel-power-plant.png" alt="Steel &amp; Power Plant"
+                        class="d-block mb-4 mx-auto">
+                    <h5 class="mb-2 pb-1">Steel &amp; Power Plant</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="Footer footer_image mt-5"
+        style="background-image: url('./img/footer/banner3.png'); background-repeat: no-repeat; background-size: cover;background-position: center top;"
+        id="footer">
+        <div class="container px-3 px-sm-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 animate__animated" id="links">
+                    <div class="footer-widget wow fadeInUp" data-wow-delay="0.9s">
+                        <h4 class="m-0 px-0 pt-0 pb-0 white_text">Links</h4>
+                        <hr style="color: white; width: 100px;" />
+                        <a href="/" class="footer_link m-0 px-0 pt-0 pb-2">
+                            <!-- <i class='bxr  bx-chevrons-right'></i> -->
+                            Home</a>
+                        <a href="/about-us.html" class="footer_link m-0 px-0 pt-0 pb-2">Company Overview</a>
+                        <a href="/certification.html" class="footer_link m-0 px-0 pt-0 pb-2"> Certification</a>
+                        <a href="/product_detail.html" class="footer_link m-0 px-0 pt-0 pb-2"> Products</a>
+                        <a href="/technical-data.html" class="footer_link m-0 px-0 pt-0 pb-2">Technical Data</a>
+                        <a href="/clients.html" class="footer_link m-0 px-0 pt-0 pb-2"> Clients</a>
+                        <a href="/Contact-Us.html" class="footer_link m-0 px-0 pt-0 pb-2"> Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 animate__animated" id="products">
+                    <div class="footer-widget wow fadeInUp" data-wow-delay="0.9s">
+                        <h4 class="m-0 px-0 pt-0 pb-0 white_text">products</h4>
+                        <hr style="color: white; width: 100px;" />
+                            <a href="/category_detail.html" class="footer_link m-0 px-0 pt-0 pb-2"> Sampling System
+                            Solutions</a>
+                        <a href="/category_detail.html" class="footer_link m-0 px-0 pt-0 pb-2"> Analytical Division</a>
+                        <a href="/category_detail.html" class="footer_link m-0 px-0 pt-0 pb-2"> Environmental
+                            Solutions</a>
+                        <a href="/category_detail.html" class="footer_link m-0 px-0 pt-0 pb-2"> Steam Engineering</a>
+                        <div class="social-icons d-flex gap-3 mt-3">
+                            <a href="https://www.facebook.com/SteamEquipments/" target="_blank" class="text-primary"><i
+                                    class="fab fa-facebook" style="font-size: 30px;color: aliceblue;"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" class="text-danger"><i
+                                    class="fab fa-instagram" style="font-size: 30px;color: aliceblue;"></i></a>
+                            <a href="https://in.linkedin.com/company/steamequipments" target="_blank"
+                                class="text-primary"><i class="fab fa-linkedin"
+                                    style=" font-size: 30px;color: aliceblue;"></i></a>
+                            <a href="https://wa.me/+912026930908" target="_blank" class="text-success"><i
+                                    class="fab fa-whatsapp" style="font-size: 30px;color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 animate__animated" id="contact_info">
+                    <div class="footer-widget wow fadeInUp" data-wow-delay="0.9s">
+                        <h4 class="m-0 px-0 pt-0 pb-0 white_text">Contact Info</h4>
+                        <hr style="color: white; width: 100px;" />
+                        <h5 style="color: white;">Steam Equipments Limited</h5>
+                        <p>Address: PLOT NO – 44, TINY, Industrial Est, Tyni Audyogic Wasahat, Kondhwa Budruk, Pune,
+                            Maharashtra 411048</p>
+                        <p>Phone:+91 2026930908</p>
+                        <p>Email: Sales@steamequipments.com</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 animate__animated" id="locate_us">
+                    <div class="footer-widget wow fadeInUp" data-wow-delay="0.9s">
+                        <h4 class="m-0 px-0 pt-0 pb-0 white_text">Locate Us</h4>
+                        <hr style="color: white; width: 100px;" />
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.696874166568!2d73.89192397584306!3d18.452067271262045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb19a9ddf817%3A0xb4d6cff995e9688e!2sSTEAM%20EQUIPMENTS%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1753445996230!5m2!1sen!2sin"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border: 1px solid #2b59d9;">
+            <p class="text-center"> © Copyright 2025, All Rights<a class="text-white" style="text-decoration: none;"
+                    href="/" target="_blank"> Steam Equipments Limited </a>| Designed by: <a class="text-white"
+                    style="text-decoration: none;" href="https://shopnoecommerce.com/" target="_blank">Shopno
+                    Ecommerce</a></p>
+        </div>
+    </footer>
+        <a title="Chat with us on WhatsApp" href="https://wa.me/919904000342?text=Hi" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+    <script>
+        // function changeImage(elem) {
+        //     var mainName = document.getElementById('mainProductName').innerHTML = elem.alt;
+        //     const mainImg = document.getElementById('mainProductImage');
+        //     mainImg.src = elem.src;
+        //     if (elem.classList.contains("product_imgs_active")) {
+        //         elem.classList.remove('product_imgs_active');
+        //         elem.classList.add('product_imgs');
+        //     }else{
+        //         document.querySelectorAll('.products_multiple_images').classList.remove('product_imgs_active');
+        //         elem.classList.remove('product_imgs');
+        //         elem.classList.add('product_imgs_active');
+        //     }
+        // }
+
+        function changeImage(elem) {
+            document.getElementById('mainProductName').innerHTML = elem.alt;
+            const mainImg = document.getElementById('mainProductImage');
+            mainImg.src = elem.src;
+            const allImages = document.querySelectorAll('.products_multiple_images');
+            allImages.forEach(img => {
+                img.classList.remove('product_imgs_active');
+                img.classList.add('product_imgs');
+            });
+            elem.classList.remove('product_imgs');
+            elem.classList.add('product_imgs_active');
+        }
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
+    <script src="front/js/jquery.min.js"></script>
+    <!-- <script src="front/js/bootstrap.bundle.min.js"></script> -->
+    <script src="front/js/swipper-bundle.min.js"></script>
+    <script src="front/js/jquery.meanmenu.min.js"></script>
+    <script src="front/js/wow.min.js"></script>
+    <script src="front/js/jquery.waypoints.min.js"></script>
+    <script src="front/js/jQuery.rProgressbar.min.js"></script>
+    <script src="front/js/jquery.nice-select.min.js"></script>
+    <script src="front/js/jquery.scrollUp.min.js"></script>
+    <script src="front/js/jquery.magnific-popup.min.js"></script>
+    <script src="front/js/odometer.min.js"></script>
+    <script src="front/js/appear.min.js"></script>
+    <script src="front/js/aminated-circle.js"></script>
+    <script src="front/js/main.js"></script>
+    <script src="front/js/product-slider.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const footer = document.getElementById("links");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            footer.classList.add("animate__fadeInUp");
+                            observer.unobserve(entry.target); // run only once
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
+
+            observer.observe(footer);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const footer = document.getElementById("products");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            footer.classList.add("animate__fadeInUp");
+                            observer.unobserve(entry.target); // run only once
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
+
+            observer.observe(footer);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const footer = document.getElementById("contact_info");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            footer.classList.add("animate__fadeInUp");
+                            observer.unobserve(entry.target); // run only once
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
+
+            observer.observe(footer);
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const footer = document.getElementById("locate_us");
+
+            const observer = new IntersectionObserver(
+                (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            footer.classList.add("animate__fadeInUp");
+                            observer.unobserve(entry.target); // run only once
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
+
+            observer.observe(footer);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpsh-oh' }, { 'server': 'sg2plzcpnl509233' }, { 'dcenter': 'sg2' }, { 'cp_id': '10347568' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+    <script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
+
+</html>
+
+</body>
+
+</html>
