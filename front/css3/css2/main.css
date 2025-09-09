@@ -11994,7 +11994,12 @@ footer h4 {
 	font-size: 18px;
 	/* color: #000000cf; */
 }
-
+.contact_main{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	
+}
 @media(max-width:425px) {
 	.float {
 		position: fixed;
@@ -12010,7 +12015,14 @@ footer h4 {
 		box-shadow: 2px 2px 3px #999;
 		z-index: 100;
 	}
-
+.contact_main{
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-top: 20px;
+	gap: 6px;
+	
+}
 	.email-style p {
 		margin: 0;
 		font-size: 16px;

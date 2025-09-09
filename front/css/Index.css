@@ -110,6 +110,7 @@ hr {
 	color: #FFFF;
 	border-radius: 50%;
 	padding: 8px;
+	border: none;
 }
 
 .navbar-brand img {
