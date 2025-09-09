@@ -101,6 +101,7 @@
         .csr-section h2 {
             font-weight: 700;
             color: #000000;
+            /* margin-top: 20px; */
         }
 
         .csr-event {
@@ -139,6 +140,13 @@
 
         .event-gallery {
             margin-top: 15px;
+        }
+        @media (max-width:768px) {
+              .csr-section h2 {
+            font-weight: 600;
+            color: #000000;
+            font-size: 35px;
+        }
         }
     </style>
 </head>
@@ -500,10 +508,10 @@
         <!-- InstanceBeginEditable name="matter" -->
         <!-- breadcrumb starts -->
         <!-- CSR Intro -->
-        <section class="csr-section py-5">
+        <section class="csr-section">
 
             <div class="container">
-                <div class="row g-5 Sepl_about">
+                <div class="row g-3 g-xl-5 g-md-3 Sepl_about mt-0">
                     <div class="col-xl-6 col-lg-8 col-md-12">
                         <div class="section-area mb-45 animate__animated" id="welcome_sepl">
                             <span class="section-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome to SEL</span>
@@ -682,7 +690,7 @@ Kondhwa police station recognised the efforts of the Steam Equipments team and w
                         lockdown.</p>
 
                     <!-- Bootstrap Tabs -->
-                    <ul class="nav nav-tabs mt-3" id="independenceTab" role="tablist">
+                    <ul class="nav nav-tabs mt-3 gap-2" id="independenceTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="ind1-tab" data-bs-toggle="tab" data-bs-target="#ind1"
                                 type="button" role="tab">Certificate</button>
