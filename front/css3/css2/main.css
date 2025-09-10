@@ -1988,7 +1988,10 @@ footer h4 {
 	padding: 8px;
 	border: none;
 }
-
+.modal-header {
+    --bs-bg-opacity: 1;
+    background-color: #0f1b46 !important;
+}
 .phone-num {
 	font-size: 18px;
 	color: #000;

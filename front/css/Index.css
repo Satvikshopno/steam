@@ -112,7 +112,10 @@ hr {
 	padding: 8px;
 	border: none;
 }
-
+.modal-header {
+    --bs-bg-opacity: 1;
+    background-color: #0f1b46 !important;
+}
 .navbar-brand img {
 	height: 75px;
 }
